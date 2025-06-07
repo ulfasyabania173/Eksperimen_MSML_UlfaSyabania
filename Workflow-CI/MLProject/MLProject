@@ -1,4 +1,4 @@
-name: CaliforniaHousing MLflow Project
+name: california_housing
 
 conda_env: conda.yaml
 

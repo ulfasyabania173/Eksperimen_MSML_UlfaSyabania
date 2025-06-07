@@ -1,4 +1,12 @@
-name: california_housing_env
+name: california_housing
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      data_path: {type: str, default: CaliforniaHousing_preprocessing.csv}
+    command: "python modelling.py --data_path {data_path}"
+
 channels:
   - defaults
 dependencies:

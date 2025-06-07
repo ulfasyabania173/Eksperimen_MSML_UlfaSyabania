@@ -11,10 +11,6 @@ args = parser.parse_args()
 
 mlflow.sklearn.autolog()
 
-# Pastikan tracking lokal (hapus set_tracking_uri jika ada)
-# mlflow.set_tracking_uri('http://localhost:5000')
-# mlflow.set_tracking_uri('https://dagshub.com/...')
-
 # Load data hasil preprocessing
 df = pd.read_csv(args.data_path)
 

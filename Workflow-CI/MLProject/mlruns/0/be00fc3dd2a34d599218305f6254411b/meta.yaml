@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/be00fc3dd2a34d599218305f6254411b/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: be00fc3dd2a34d599218305f6254411b
+run_name: efficient-rat-595
+run_uuid: be00fc3dd2a34d599218305f6254411b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749308019255
+status: 1
+tags: []
+user_id: Asus
