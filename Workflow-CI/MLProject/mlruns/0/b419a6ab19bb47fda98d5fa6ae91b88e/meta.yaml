@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/b419a6ab19bb47fda98d5fa6ae91b88e/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b419a6ab19bb47fda98d5fa6ae91b88e
+run_name: bittersweet-rat-367
+run_uuid: b419a6ab19bb47fda98d5fa6ae91b88e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749300717998
+status: 1
+tags: []
+user_id: Asus
