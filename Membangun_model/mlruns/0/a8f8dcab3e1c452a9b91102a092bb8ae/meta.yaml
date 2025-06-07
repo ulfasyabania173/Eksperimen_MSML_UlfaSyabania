@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/a8f8dcab3e1c452a9b91102a092bb8ae/artifacts
+end_time: 1749287385167
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a8f8dcab3e1c452a9b91102a092bb8ae
+run_name: debonair-crow-571
+run_uuid: a8f8dcab3e1c452a9b91102a092bb8ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749287351497
+status: 3
+tags: []
+user_id: Asus

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/5cd2bb1ed80845cfa3ad8191b2c18b15/artifacts
+end_time: 1749288034237
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5cd2bb1ed80845cfa3ad8191b2c18b15
+run_name: Ridge_GridSearchCV
+run_uuid: 5cd2bb1ed80845cfa3ad8191b2c18b15
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749287995393
+status: 3
+tags: []
+user_id: Asus
