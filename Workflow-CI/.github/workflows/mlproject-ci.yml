@@ -1,0 +1,43 @@
+name: MLflow Project CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  retrain:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Miniconda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          auto-update-conda: true
+          python-version: 3.8
+
+      - name: Install MLflow
+        run: pip install mlflow
+
+      - name: Run MLflow Project
+        run: |
+          cd Workflow-CI/MLProject
+          mlflow run .
+
+      - name: Upload model artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: trained-model
+          path: Workflow-CI/MLProject/mlruns/**/artifacts/model/
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: Workflow-CI/MLProject
+          push: true
+          tags: ulfasyabania/california-housing-mlflow:latest
