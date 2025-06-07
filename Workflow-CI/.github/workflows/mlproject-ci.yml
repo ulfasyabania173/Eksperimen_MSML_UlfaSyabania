@@ -35,23 +35,27 @@ jobs:
           name: trained-model
           path: Workflow-CI/MLProject/mlruns/**/artifacts/model/
 
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v5
-        with:
-          context: Workflow-CI/MLProject
-          push: true
-          tags: ulfasyabania/california-housing-mlflow:latest
-
-      - name: Build MLflow Docker image
-        run: |
-          cd Workflow-CI/MLProject
-          mlflow models build-docker -m ./mlruns/0/ -n ulfasyabania173/california-housing-mlflow:latest
-
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: Get latest MLflow run ID
+        id: get_run_id
+        run: |
+          cd Workflow-CI/MLProject/mlruns/0
+          RUN_ID=$(ls -td -- */ | head -n1 | tr -d '/')
+          echo "Latest RUN_ID: $RUN_ID"
+          echo "run_id=$RUN_ID" >> $GITHUB_OUTPUT
+
+      - name: Build MLflow Docker image
+        run: |
+          cd Workflow-CI/MLProject
+          mlflow models build-docker -m ./mlruns/0/${{ steps.get_run_id.outputs.run_id }}/artifacts/model -n ulfasyabania173/california-housing-mlflow:${{ steps.get_run_id.outputs.run_id }}
+
+      - name: List Docker images
+        run: docker images
+
       - name: Push Docker image
-        run: docker push ulfasyabania173/california-housing-mlflow:latest
+        run: docker push ulfasyabania173/california-housing-mlflow:${{ steps.get_run_id.outputs.run_id }}
