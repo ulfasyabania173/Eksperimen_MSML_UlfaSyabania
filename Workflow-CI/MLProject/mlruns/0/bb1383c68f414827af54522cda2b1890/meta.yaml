@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/bb1383c68f414827af54522cda2b1890/artifacts
+end_time: 1749314386044
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bb1383c68f414827af54522cda2b1890
+run_name: chill-stork-320
+run_uuid: bb1383c68f414827af54522cda2b1890
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749314328883
+status: 4
+tags: []
+user_id: Asus

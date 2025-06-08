@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/dda1518ab0294e84b6beb3952068a94f/artifacts
+end_time: 1749294330853
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dda1518ab0294e84b6beb3952068a94f
+run_name: likeable-sloth-351
+run_uuid: dda1518ab0294e84b6beb3952068a94f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749294293634
+status: 3
+tags: []
+user_id: Asus

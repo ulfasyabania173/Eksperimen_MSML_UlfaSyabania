@@ -8,5 +8,5 @@ schema: '{"mlflow_colspec": [{"type": "double", "name": "MedInc", "required": tr
   "name": "AveOccup", "required": true}, {"type": "double", "name": "Latitude", "required":
   true}, {"type": "double", "name": "Longitude", "required": true}]}'
 source: '{"tags": {"mlflow.user": "Asus", "mlflow.source.name": "modelling.py", "mlflow.source.type":
-  "LOCAL"}}'
+  "LOCAL", "mlflow.source.git.commit": "6dd3e7c268aa50a463e40637e63bebc2046aed56"}}'
 source_type: code

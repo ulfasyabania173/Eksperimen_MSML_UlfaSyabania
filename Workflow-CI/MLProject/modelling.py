@@ -29,5 +29,6 @@ with mlflow.start_run():
     r2 = r2_score(y_test, y_pred)
     print(f"MSE: {mse}")
     print(f"R2: {r2}")
+    mlflow.sklearn.log_model(model, "model")
 
 print("Training selesai.")

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/5576bbbbd4ca42f7b935faeba637296a/artifacts
+end_time: 1749315957369
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5576bbbbd4ca42f7b935faeba637296a
+run_name: vaunted-fox-726
+run_uuid: 5576bbbbd4ca42f7b935faeba637296a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749315859300
+status: 4
+tags: []
+user_id: Asus

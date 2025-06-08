@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/9989d855bced477082d4939102c158b9/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9989d855bced477082d4939102c158b9
+run_name: magnificent-wasp-914
+run_uuid: 9989d855bced477082d4939102c158b9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749301786576
+status: 1
+tags: []
+user_id: Asus
