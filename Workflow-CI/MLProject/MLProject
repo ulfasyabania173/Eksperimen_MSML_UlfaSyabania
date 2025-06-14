@@ -7,3 +7,7 @@ entry_points:
     parameters:
       data_path: {type: str, default: CaliforniaHousing_preprocessing.csv}
     command: "python modelling.py --data_path {data_path}"
+
+artifacts:
+  model:
+    path: Workflow-CI/MLProject/mlruns/0/<run_id>/artifacts/model/

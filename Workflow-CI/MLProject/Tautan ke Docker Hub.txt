@@ -1,2 +1,0 @@
-# Tautan ke Docker Hub
-https://hub.docker.com/u/ulfasyabania
