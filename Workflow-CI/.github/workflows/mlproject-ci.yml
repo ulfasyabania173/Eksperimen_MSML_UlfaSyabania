@@ -57,5 +57,4 @@ jobs:
       - name: List Docker images
         run: docker images
 
-      - name: Push Docker image
-        run: docker push ulfasyabania173/california-housing-mlflow:${{ steps.get_run_id.outputs.run_id }}
+      - name: Push Docker image        run: docker push ulfasyabania173/california-housing-mlflow:${{ steps.get_run_id.outputs.run_id }}
